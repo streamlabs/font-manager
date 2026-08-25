@@ -41,7 +41,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22.12.0'
+          node-version: '24.x'
       - name: Install dependencies
         run: yarn install --immutable --immutable-cache --check-cache
       - name: Add MSBuild to PATH
@@ -161,7 +161,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22.12.0'
+          node-version: '24.x'
       - name: Install dependencies
         run: yarn install --immutable --immutable-cache --check-cache
       - name: Build
