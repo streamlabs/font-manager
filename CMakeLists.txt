@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.14)
-project(node_fontmanager)
 
 if(APPLE)
 	if (NOT CMAKE_OSX_ARCHITECTURES)
@@ -13,6 +12,8 @@ if(APPLE)
 		endif()
 	endif()
 endif()
+
+project(node_fontmanager)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
 
